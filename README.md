@@ -1,5 +1,15 @@
 # Elevator Project Report
 
+## Links
+
+[My GitHub Repository](https://github.com/bquant90/bquant90.github.io)
+
+[Demo](https://huyen-nguyen.github.io/hci-template/demo.html) (not done yet)
+
+[Video (optional)](https://www.youtube.com/embed/uilkmUoXoLU) (e.g. https://www.youtube.com/embed/uilkmUoXoLU - embed link)
+
+##
+
 For my elevator, I went to Holden Hall on campus and used their elevator #2. I saw no major problems with the elevator's design, but its functionality was odd. For example, when I attempted to go to the 3rd floor, the elevator froze and did not do anything. This happens because there is no 3rd floor in Holden Hall. So the 3rd floor button was essentially useless. The rest of the floor buttons worked fine, including other functionalities such as opening and closing the door. The color design was grey and black, which provided a good contrast between symbols and buttons. The position of the buttons with regards to its symbols were also easy to understand. 
 
 Overall, the elevator is a well-designed one, albeit with one major flaw. Here is the control interface shown below.
