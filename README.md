@@ -1,4 +1,4 @@
-# [Elevator Project Report](https://bquant90.github.io/)
+# Elevator Project Report
 
 ## Links
 
