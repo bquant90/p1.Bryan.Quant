@@ -16,12 +16,14 @@ For my elevator, I went to Holden Hall on campus and used their elevator #2. I s
 
 Overall, the elevator is a well-designed one, albeit with one major flaw. Here is the control interface shown below.
 
+![Elevator Front Interface](https://user-images.githubusercontent.com/92451196/192892463-b65f62f1-4eed-4321-a3ca-4eb27e3647f3.jpg)
 ![IMG_1887_5_15](https://user-images.githubusercontent.com/92451196/190449393-4ffeacb0-d026-484f-b4ee-746923e810af.jpg)
 
 
 The control interface in operation, going to the first floor from the second:
 
 ![IMG_1890_new](https://user-images.githubusercontent.com/92451196/190455725-fe8905e9-1458-49d5-bedd-ac4e99e1219c.gif)
+
 
 
 The most common uses for an elevator are to go to a selected floor and to open and close the door. More rare uses include (in the case of the Holden elevator) using the alarm or to call someone for help. For elevator technicians, they have additional access to elevator controls as seen with the several keyholes located on the elevator panel. The current elevator interface makes it easy for people to go to a selected floor.
