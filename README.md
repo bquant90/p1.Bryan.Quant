@@ -4,10 +4,6 @@
 
 [My GitHub Repository](https://github.com/bquant90/bquant90.github.io)
 
-[Demo](https://huyen-nguyen.github.io/hci-template/demo.html) (not done yet)
-
-[Video (optional)](https://www.youtube.com/embed/uilkmUoXoLU) (e.g. https://www.youtube.com/embed/uilkmUoXoLU - embed link)
-
 [Processing File](https://github.com/bquant90/bquant90.github.io/archive/refs/heads/main.zip)
 
 ##
