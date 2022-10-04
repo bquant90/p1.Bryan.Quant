@@ -2,12 +2,15 @@
 import processing.sound.*;
 SoundFile Alarm;
 SoundFile CallOff;
+SoundFile phoneRing;
+SoundFile touchScreen; // Thanks to zapsplat.com for the sound effects.
 
 PFont braille;
 PFont arial;
 boolean clickUp = false;
 boolean clickDown = false;
 boolean call = false;
+boolean alarm = false;
 int doorStatus = 0;
 int currentFloor = 1;
 int time = millis();
@@ -38,6 +41,8 @@ void setup() {
   // Sound for the alarm and call button
   Alarm = new SoundFile(this, "arcadeAlarm.mp3");
   CallOff = new SoundFile(this, "callOff.mp3");
+  phoneRing = new SoundFile(this, "phoneRing.mp3");
+  touchScreen = new SoundFile(this, "touchScreen.mp3");
   
   
   // Default text
@@ -227,6 +232,7 @@ void mouseClicked() {
     if(isMouseOver(200, 290, 100, 100) == true && currentFloor < 2) {
       clickUp = true;
       currentFloor = 2;
+      touchScreen.play();
       fill(255);
       strokeWeight(0);
       rect(430, 460, 260, 50);
@@ -234,6 +240,7 @@ void mouseClicked() {
     // On 2nd floor, can't go further up
     else if(isMouseOver(200, 290, 100, 100) == true && currentFloor == 2) {
       clickUp = false;
+      touchScreen.play();
       fill(255);
       strokeWeight(0);
       rect(430, 460, 260, 50);
@@ -243,6 +250,7 @@ void mouseClicked() {
     if(isMouseOver(200, 440, 100, 100) == true && currentFloor == 2) {
       clickDown = true;
       currentFloor = 1;
+      touchScreen.play();
       fill(255);
       strokeWeight(0);
       rect(430, 460, 260, 50);
@@ -251,6 +259,7 @@ void mouseClicked() {
     else if(isMouseOver(200, 440, 100, 100) == true && currentFloor == 1) {
       clickUp = false;
       clickDown = false;
+      touchScreen.play();
       fill(255);
       strokeWeight(0);
       rect(430, 460, 260, 50);
@@ -259,6 +268,7 @@ void mouseClicked() {
     else if(isMouseOver(200, 440, 100, 100) == true && currentFloor == 0) {
       clickUp = true;
       currentFloor = 1;
+      touchScreen.play();
       fill(255);
       strokeWeight(0);
       rect(430, 460, 260, 50);
@@ -268,6 +278,7 @@ void mouseClicked() {
     if(isMouseOver(200, 590, 100, 100) == true && currentFloor > 0) {
       clickDown = true;
       currentFloor = 0;
+      touchScreen.play();
       fill(255);
       strokeWeight(0);
       rect(430, 460, 260, 50);
@@ -275,6 +286,7 @@ void mouseClicked() {
     // Can't go down further than basement level
     else if(isMouseOver(200, 590, 100, 100) == true && currentFloor == 0) {
       clickDown = false;
+      touchScreen.play();
       fill(255);
       strokeWeight(0);
       rect(430, 460, 260, 50);
@@ -287,19 +299,27 @@ void mouseClicked() {
   }
   
   // Alarm button sound
-  if (isMouseOver(150, 950, 100, 100) == true) {
+  if (isMouseOver(150, 950, 100, 100) == true && alarm == false) {
     if(!Alarm.isPlaying()) {
+      alarm = true;
       Alarm.play();
+      Alarm.loop();
+    }
+  }
+  
+  else if (isMouseOver(150, 950, 100, 100) == true && alarm == true) {
+    if(Alarm.isPlaying()) {
+      alarm = false;
+      Alarm.stop();
+      CallOff.play();
     }
   }
    
   // Call button sound and effect
   if(isMouseOver(540, 950, 100, 100) == true && call == false) {
     call = true;
-    if(!Alarm.isPlaying()) {
-      Alarm.play();
-    }
-  }
+    phoneRing.play();
+   }
   
   else if (isMouseOver(540, 950, 100, 100) == true && call == true) {
     call = false;
@@ -309,10 +329,12 @@ void mouseClicked() {
   // Door Open Button
   if(isMouseOver(250, 740, 100, 100) == true && doorStatus == 0) {
     doorStatus = 1;
+    touchScreen.play();
   }
   
   // Door Close Button
   if(isMouseOver(450, 740, 100, 100) == true && doorStatus == 1) {
     doorStatus = 0;
+    touchScreen.play();
   }
 }
