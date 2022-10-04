@@ -40,3 +40,7 @@ Again, the only mistake I could find in the elevator design is that the 3rd floo
 ![Elevator Design](https://user-images.githubusercontent.com/92451196/191280730-6f85ed66-a8e7-4ce3-8871-704d8f7dbbbb.png)
 
 I gave the controls a slightly more colorful design so it looks more pleasing to the users. The alarm and call buttons have been changed to a different color so the user knows that those functions are for special uses only. On the original interface, the "call recieved" indicator was hard to read, so I moved it up next to the 2nd floor button. That should make the button easier for users to see that their button press is recognized. Everything else in the elevator is mostly the same. I believe my interface is more simple and user-friendly than the original one.
+
+For my Processing file, I went a step further and completely re-did the interface with a touchscreen. I believe having a touchscreen gives the elevator a more modern design and will excite many people when they use it. The interface is interactable and can be downloaded using the "**Processing File + Components**" link above.
+
+![New Design](https://user-images.githubusercontent.com/92451196/193857803-2531cc42-9538-4387-aa80-04cee0487411.png)
