@@ -4,7 +4,7 @@
 
 [My GitHub Repository](https://github.com/bquant90/bquant90.github.io)
 
-[Processing File](https://github.com/bquant90/p1.Bryan.Quant/archive/refs/heads/main.zip)
+[Processing File + Components](https://github.com/bquant90/p1.Bryan.Quant/archive/refs/heads/main.zip)
 
 [Youtube Video Demonstration](https://www.youtube.com/watch?v=ZbUn5kHiEKo)
 
